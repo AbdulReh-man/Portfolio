@@ -28,15 +28,17 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-4 sticky ${
+      className={`${
+        styles.paddingX
+      } w-full flex items-center py-4 md:py-8 sticky ${
         visible ? "top-0" : ""
       } z-20 bg-primary `}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         {/* Image/Logo with name */}
         <Link
-          to="/"
-          className="flex items-center gap-2"
+          to='/'
+          className='flex items-center gap-2'
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
@@ -51,23 +53,23 @@ const Navbar = () => {
               duration: 5,
             }}
           >
-            <div className=" h-8 w-8">
-              <img src={reactjs} alt="X" />
+            <div className=' h-10 w-10'>
+              <img src={reactjs} alt='X' />
             </div>
           </motion.div>
-          <p className="flex">
-            Hello &nbsp; <span className="sm:block hidden">| Abdul</span>
+          <p className='flex lg:text-2xl'>
+            Hello &nbsp; <span className='sm:block hidden'>| Abdul</span>
           </p>
         </Link>
 
         {/* Navigation Links */}
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((links) => (
             <li
               key={links.id}
               className={`${
                 active === links.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white text-xl lg:text-2xl font-medium cursor-pointer`}
               onClick={() => {
                 setActive(links.title);
               }}
@@ -79,19 +81,19 @@ const Navbar = () => {
           ))}
         </ul>
         {/* menu navigation for small devices*/}
-        <div className="list-none flex flex-1 sm:hidden justify-end items-center">
+        <div className='list-none flex flex-1 sm:hidden justify-end items-center '>
           <img
             src={toggle ? close : menu}
-            alt="X"
-            className="w-[20px] h-[20px] object-contain"
+            alt='X'
+            className='w-[20px] h-[20px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-16 right-0 mx-4  min-w-[130px] z-10 rounded-xl`}
+            } p-6  bg-gradient-to-bl from-purple-800 to-slate-900 absolute top-16 right-0 mx-4 min-w-[130px] z-10 rounded-xl`}
           >
-            <ul className="list-none flex flex-col  justify-end items-start gap-4 ">
+            <ul className='list-none flex flex-col  justify-end items-start gap-4 '>
               {navLinks.map((links) => (
                 <li
                   key={links.id}

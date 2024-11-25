@@ -11,8 +11,6 @@ import {
   tailwind,
   git,
   figma,
-  starbucks,
-  shopify,
   spotiviral,
   github,
 } from "../assets/index";
@@ -118,7 +116,7 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Fiver",
-    icon: starbucks,
+    icon: tailwind,
     iconBg: "#383E56",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -130,7 +128,7 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Fiver",
-    icon: shopify,
+    icon: css,
     iconBg: "#383E56",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",

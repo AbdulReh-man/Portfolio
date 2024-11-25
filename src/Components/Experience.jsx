@@ -1,5 +1,4 @@
-import React, { Suspense } from "react";
-import { BallCanvas } from "./canvas/index";
+import React from "react";
 import { motion } from "framer-motion";
 import {
   VerticalTimeline,
@@ -24,22 +23,22 @@ const ExperienceCard = (props) => {
       date={date}
       iconStyle={{ background: iconBg, color: "#fff" }}
       icon={
-        <div className="flex justify-center items-center w-full h-full">
+        <div className='flex justify-center items-center w-full h-full'>
           <img
             src={icon}
             alt={company_name}
-            className="h-[90%] w-[90%] object-contain"
+            className='h-[90%] w-[90%] object-contain'
           />
         </div>
       }
     >
       <h4 className={`${styles.heroSubText}`}>{title}</h4>
       <p className={`${styles.sectionSubText}`}>{company_name}</p>
-      <ul className="list-disc mt-5 ml-5 space-y-2">
+      <ul className='list-disc mt-5 ml-5 space-y-2'>
         {points.map((bullets, index) => (
           <li
             key={index}
-            className="text-white-100 pl-1 tracking-wider text-sm"
+            className='text-white-100 pl-1 tracking-wider text-sm'
           >
             {bullets}
           </li>
@@ -56,7 +55,7 @@ const Experience = () => {
         <p className={`${styles.sectionSubText}`}>What Have I Done</p>
         <h2 className={`${styles.sectionHeadText}`}>Experiences</h2>
       </motion.div>
-      <div className="md:mt-10 relative">
+      <div className='md:mt-10 relative'>
         <VerticalTimeline>
           {experiences.map((experience) => (
             <ExperienceCard key={experience.title} {...experience} />

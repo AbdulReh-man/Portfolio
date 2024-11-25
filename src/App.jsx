@@ -11,19 +11,18 @@ import {
   Tech,
   Works,
   ProgressScroll,
-  Hobby
+  Hobby,
 } from "./Components/index.js";
 
 import Map from "./Components/Map.jsx";
 
-
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className='relative z-0 bg-primary'>
         <Navbar />
         <ProgressScroll />
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center ">
+        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center '>
           <Hero />
         </div>
         <About />
@@ -32,8 +31,8 @@ function App() {
         <Works />
         <Feedback />
         {/* <Hobby/> */}
-          <Contact />
-          <Map/>
+        <Contact />
+        <Map />
       </div>
     </BrowserRouter>
   );
