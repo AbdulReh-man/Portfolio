@@ -12,7 +12,10 @@ import {
   git,
   figma,
   spotiviral,
+  smartdairy,
+  themeforest,
   github,
+  creator,
 } from "../assets/index";
 
 export const navLinks = [
@@ -47,10 +50,10 @@ const services = [
     title: "Figma Designing",
     icon: mobile,
   },
-  // {
-  //   title: "Content Creator",
-  //   icon: creator,
-  // },
+  {
+    title: "MERN Stack Developer",
+    icon: creator,
+  },
 ];
 
 const technologies = [
@@ -102,68 +105,20 @@ const technologies = [
   //   name: "MongoDB",
   //   icon: mongodb,
   // },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
-  // {
-  //   name: "docker",
-  //   icon: docker,
-  // },
 ];
 
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Fiver",
+    company_name: "Self Learning",
     icon: tailwind,
     iconBg: "#383E56",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Self-learning journey: Covered JavaScript, Node.js (backend), and React.js (frontend) while exploring essential technologies",
+      "Gained skills: Proﬁciency in TaiwindCss , Linux, Nginx, Git and GitHub.",
+      "Passion for learning: Fueled by online courses and real-world projects, developed a versatile skill set for diverse ech challenges.",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Fiver",
-    icon: css,
-    iconBg: "#383E56",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  // {
-  //   title: "React Native Developer",
-  //   company_name: "Tesla",
-  //   icon: tesla,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2021 - Feb 2022",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
-
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "Meta",
-  //   icon: meta,
-  //   iconBg: "#E6DEDD",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  // },
 ];
 
 const testimonials = [
@@ -173,31 +128,15 @@ const testimonials = [
     name: "fiveforyou222",
     designation: "Buyer",
     company: "on Fiver",
-    image: "",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
   },
-  // {
-  //   testimonial:
-  //     "I've never met a web developer who truly cares about their clients' success like Rick does.",
-  //   name: "Chris Brown",
-  //   designation: "COO",
-  //   company: "DEF Corp",
-  //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-  // },
-  // {
-  //   testimonial:
-  //     "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-  //   name: "Lisa Wang",
-  //   designation: "CTO",
-  //   company: "456 Enterprises",
-  //   image: "https://randomuser.me/api/portraits/women/6.jpg",
-  // },
 ];
 
 const projects = [
   {
     name: "SpotiViral",
     description:
-      "Web-based platform that allows users to search, Select, and Promote their Songs and Albums, providing a convenient and efficient solution for their needs.",
+      "Web-based platform that allows users to search, Select, and Promote their Songs and Albums, providing a convenient and efficient solution for their needs. It offers real-time search from Spotify’s API and Secure Payments, and a user-friendly interface.",
     tags: [
       {
         name: "react",
@@ -216,52 +155,97 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    //logo:
     image: spotiviral,
     source_code_link: "https://spotiviral.com/",
   },
-  // {
-  //   name: "Job IT",
-  //   description:
-  //     "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-  //   tags: [
-  //     {
-  //       name: "react",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "restapi",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "scss",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: jobit,
-  //   source_code_link: "https://github.com/",
-  // },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
+  {
+    name: "Smart Dairy",
+    description:
+      "Dairy-Direct is an Web-Based platform connecting consumers with verified dairy producers, offering features like batch tracking, subscriptions, and AI-powered fake-review detection to ensure trust and transparency.Admins use a detailed dashboard, while consumers enjoy a secure shopping experience.",
+    tags: [
+      {
+        name: "Reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TailwidCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Expressjs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: smartdairy,
+    source_code_link: "https://github.com/AbdulReh-man",
+  },
+  {
+    name: "Pak Opportunity Hub ",
+    description:
+      "Pak Opportunity Hub is a web platform that centralizes information on government scholarships in Pakistan. It offers features like eligibility checks, agent services for guidance, real-time notifications, and secure payments. Designed for transparency and accessibility.",
+    tags: [
+      {
+        name: "Reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Axios",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TailwindCss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Nodejs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "",
+    source_code_link: "https://github.com/AbdulReh-man",
+  },
+  {
+    name: "Theme Forest Clone",
+    description:
+      "Pak Opportunity Hub is a web platform that centralizes information on government scholarships in Pakistan. It offers features like eligibility checks, agent services for guidance, real-time notifications, and secure payments. Designed for transparency and accessibility.",
+    tags: [
+      {
+        name: "Html",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Javascript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Booststrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: themeforest,
+    source_code_link:
+      "https://abdulreh-man.github.io/html-css-js-Client-Poject/index.html",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

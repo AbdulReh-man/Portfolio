@@ -21,6 +21,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import github from "./tech/github.png";
 import spotiviral from "./spotiviral.png";
+import smartdairy from "./Smartdairy.png";
+import themeforest from "./themeforest.png";
 
 export {
   logo,
@@ -45,4 +47,6 @@ export {
   tailwind,
   typescript,
   spotiviral,
+  smartdairy,
+  themeforest,
 };

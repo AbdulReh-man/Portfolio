@@ -2,33 +2,33 @@ import { styles } from "../styles";
 import Wrapper from "../hoc/Wrapper";
 import { TypeAnimation } from "react-type-animation";
 import PorfolioPic from "../assets/company/MinePic.png";
+import CV from "../assets/resume/CV.pdf";
+import { HashLink } from "react-router-hash-link";
 // import { Distortion } from "./canvas";
 const Hero = () => {
   const text = [
     "Abdul Rehman",
-    1000,
-    " A Developer",
-    1000,
+    3000,
+    " A Web Developer",
+    4000,
     "A Freelancer",
-    1000,
-    " A Designer",
-    1000,
+    4000,
+    " A Web Designer",
+    4000,
   ];
   return (
     <section
       className={`w-full md:h-auto h-full  mx-auto flex flex-col lg:flex-row justify-center items-center gap-x-14`}
     >
       <div
-        className={`mx-auto flex flex-row items-start gap-5 flex-[0.5] mb-10 md:mb-14 bg-black`}
+        className={`mx-auto flex flex-row items-start gap-5 flex-[0.5] mb-10 md:mb-14`}
       >
         <div className='flex flex-col justify-center items-center mt-5 '>
           <div className='w-5 h-5 rounded-full bg-[#753df9]' />
           <div className='w-1 sm:h-96 h-52 violet-gradient' />
         </div>
         <div>
-          <h1
-            className={`${styles.heroHeadText} text-white text-pretty xl:text-nowrap`}
-          >
+          <h1 className={`${styles.heroHeadText} text-white text-pretty`}>
             Hi, Im &nbsp;
             <TypeAnimation
               sequence={text}
@@ -41,11 +41,23 @@ const Hero = () => {
             />
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I developed 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            An Aspiring Developer who loves to take on new Projects that
+            challenges his
+            <br className='sm:block hidden' />
+            Analytical and Technological Thinking
           </p>
-          <div className='p-2 w-fit rounded-lg violet-gradient hover:bg-border-gradient border-2 mt-10 font-bold text-lg'>
-            <button className=''>Contact Me</button>
+          <div></div>
+          <div className='mt-10 space-x-2 flex justify-start items-center'>
+            <button className='font-bold text-xs md:text-lg p-2 rounded-lg border-2  bg-indigo-700 hover:bg-transparent'>
+              <a href={CV} download='Abdul_Resume.pdf'>
+                Download CV
+              </a>
+            </button>
+            <button className='font-bold text-xs md:text-lg p-2 rounded-lg  border-2  hover:bg-indigo-700'>
+              <HashLink smooth to={`#contact`}>
+                Contact Me
+              </HashLink>
+            </button>
           </div>
         </div>
       </div>
